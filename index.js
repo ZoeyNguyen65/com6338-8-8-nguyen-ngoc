@@ -19,9 +19,9 @@ form.addEventListener('submit', (event) => {
   .then(response => response.json())
   .then(data => {
   if (data.cod === "404") {
-  const weatherHTML = `<h2>Location Not Found</h2>`;
-  weatherSection.innerHTML = weatherHTML;
-  weatherSection.style.display = 'block';
+    const weatherHTML = `<h2>Location Not Found</h2>`;
+    weatherSection.innerHTML = weatherHTML;
+    weatherSection.style.display = 'block';
 
   } else {
     const lat = data.coord.lat;
